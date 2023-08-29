@@ -425,8 +425,7 @@ nav input {
     touch-action: manipulation;
     will-change: transform, opacity;
     padding: 10px 20px;
-    margin: auto;
-    display: grid;
+    margin-left: 6%;
 }
 
 .link-banner-texto:hover {
@@ -471,12 +470,12 @@ nav input {
     left: 0px;
     right: 0px;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .card-body-juegos-destacados {
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .card-juego {
