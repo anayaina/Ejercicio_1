@@ -371,135 +371,26 @@ nav input {
     font-weight: 600;
 }
 
-/* Banner llamativo Colores*/
-#stripes {
+/* Banner llamativo colores */
+.banner {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 95%;
-    overflow: hidden;
-    transform-origin: 0;
-    transform: skewY(-12deg);
-    background: -webkit-linear-gradient(300deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
-    background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
-
+    height: 100%;
 }
 
-#stripes, #stripes span {
-    position: relative;
-}
-
-#stripes span {
-    height: 40px;
-}
-
-#stripes :nth-child(1) {
-    width: 50%;
-    left: 50%;
-    top: 40px;
-    background: #4c29ff;
-}
-
-#stripes :nth-child(2) {
-    width: 14%;
-    right: 0;
-    bottom: 40px;
-    background: #2be7ff;
-}
-
-#stripes :nth-child(3) {
-    width: 25%;
-    top: 10px;
-    right: 10px;
-    background: #a1ffc8;
-}
-
-@media (min-width:670px) {
-    #stripes span {
-        height: 150px;
-    }
-
-    #stripes :nth-child(1) {
-        top: 0;
-    }
-
-    #stripes :nth-child(2) {
-        width: 16.66667%;
-        top: 300px;
-        bottom: auto;
-        background: #0dcfff;
-    }
-
-    #stripes :nth-child(3) {
-        width: 33.33333%;
-        right: auto;
-        background: #11bdff;
-    }
-}
-
-@media (min-width: 880px) {
-    #stripes span {
-        height: 190px;
-    }
-
-    #stripes :nth-child(1) {
-        width: 33.33333%;
-        left: -16.66666%;
-        background: #53f;
-    }
-
-    #stripes :nth-child(2) {
-        width: 33.33333%;
-        top: 0;
-        left: 16.66666%;
-        right: auto;
-        background: #4553ff;
-    }
-
-    #stripes :nth-child(3) {
-        width: 33.33333%;
-        left: 49.99999%;
-        bottom: auto;
-        background: #4f40ff;
-    }
-
-    #stripes :nth-child(4) {
-        width: 33.33333%;
-        top: 380px;
-        right: -16.66666%;
-        background: #25ddf5;
-    }
-
-    #stripes :nth-child(5) {
-        width: 33.33333%;
-        bottom: 0;
-        background: #1fa2ff;
-    }
-}
-
-/* Banner llamativo Imagen*/
-.contenedor-sims-banner {
-    position: absolute;
-}
-
-#sims-banner-img {
-    height: 500px;
-    width: 800px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+.banner img {
+    height: 550px;
+    width: 900px;
+    bottom: 0;
 }
 
 /* Banner llamativo Texto*/
-.contenedor-banner-texto {
-    position: absolute;
-    bottom: 35%;
-}
-
-#title-banner-texto {
-    font-size: 60px;
+.title-banner-texto {
+    font-size: 65px;
     font-weight: 600;
     color: var(--color-background);
     padding-left: 6%;
-    top: 20%;
 }
 
 .subtitle-banner-texto {
@@ -507,18 +398,16 @@ nav input {
     font-weight: 600;
     color: var(--color-background);
     padding-left: 6%;
-    position: relative;
 }
 
 .text-banner-texto {
     font-size: 20px;
     font-weight: 600;
     color: var(--color-background);
-    padding-left: 10%;
+    padding-left: 6%;
 }
 
 .link-banner-texto {
-    align-items: center;
     appearance: none;
     background-color: #fff;
     border-radius: 24px;
@@ -526,18 +415,18 @@ nav input {
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
     box-sizing: border-box;
     color: #3c4043;
-    font-size: 14px;
+    font-size: 15px;
     height: 48px;
     letter-spacing: .25px;
     line-height: normal;
     overflow: visible;
-    position: relative;
     text-align: center;
     transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
     touch-action: manipulation;
     will-change: transform, opacity;
     padding: 10px 20px;
-    margin-left: 10%;
+    margin: auto;
+    display: grid;
 }
 
 .link-banner-texto:hover {
@@ -585,12 +474,12 @@ nav input {
     margin-top: 3%;
 }
 
-.card-body-juegos-destacados{
+.card-body-juegos-destacados {
     margin-left: 13%;
     margin-right: 13%;
 }
 
-.card-juego{
+.card-juego {
     height: 100%;
     width: 100%;
 }
