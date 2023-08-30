@@ -112,15 +112,15 @@
               </div>
             </div>
           </li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Avisos</a></li>
+          <li><a href="#seccion-noticias">Noticias</a></li>
+          <li><a href="#seccion-avisos">Avisos</a></li>
         </ul>
         <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
     </nav>
 
     <!-- Banner llamativo -->
-    <!-- <div class="card card-banner-colores border-0">
+    <div class="card card-banner-colores border-0">
       <img src="../assets/img/random/fondo-banner.png" class="card-img"
         alt="fondo-banner">
       <div class="card-img-banner">
@@ -140,10 +140,10 @@
           <img src="..\assets\img\sims\sims-banner-2.png" alt="Los Sims 4">
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Sección Juegos Destacados -->
-    <!-- <section id="seccion-juegos-destacados">
+    <section id="seccion-juegos-destacados">
       <div class="card-juegos-destacados">
         <h1 class="h1-juegos-destacados">Juegos Destacados</h1>
         <div class="card-body-juegos-destacados">
@@ -221,7 +221,7 @@
           </section>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Noticias -->
     <section id="seccion-noticias">
@@ -267,7 +267,6 @@
                 </div>
               </div>
             </section>
-
             <section id="tab2" class="tab-panel">
               <div class="row row-cols-1 row-cols-md-3 g-4 card-noticias">
                 <div class="col">
@@ -335,7 +334,83 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Avisos -->
+    <section id="seccion-avisos">
+      <div class="card-avisos">
+        <h1 class="h1-avisos">Avisos</h1>
+        <div class="tabset-avisos">
+          <input type="radio" name="tabset-avisos" id="tab1avisos" aria-controls="tab1avisos"
+            checked>
+          <label for="tab1avisos">Torneos</label>
+          <input type="radio" name="tabset-avisos" id="tab2avisos" aria-controls="tab2avisos">
+          <label for="tab2avisos">Eventos</label>
+          <div class="tab-panels-avisos">
+            <section id="tab1avisos" class="tab-panel-avisos">
+              <div class="row row-cols-1 row-cols-md-3 g-4 card-noticias">
+                <div class="col">
+                  <div class="card card-tabs">
+                    <img src="../assets/img/noticias/evento.png" class="card-img-tabs">
+                    <div class="card-body-tabs">
+                      <h5 class="card-title-tabs h5-dark">Celebramos el futuro de P&W</h5>
+                      <p class="card-text-tabs">El primer evento presencial reunió a todos para animar a emprender el increíble trabajo que les espera.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-tabs">
+                    <img src="../assets/img/noticias/rene.png" class="card-img-tabs">
+                    <div class="card-body-tabs">
+                      <h5 class="card-title-tabs h5-dark">Project Rene</h5>
+                      <p class="card-text-tabs">Descubre la evolución de Los Sims donde se involucra a los fans en el proceso de desarrollo.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-tabs">
+                    <img src="../assets/img/noticias/Cliffhanger.png" class="card-img-tabs">
+                    <div class="card-body-tabs">
+                      <h5 class="card-title-tabs h5-dark">Conoce Cliffhanger Games</h5>
+                      <p class="card-text-tabs">Conoce el nuevo juego juego de acción y aventura para un jugador basado en Pantera Negra de Marvel.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="tab2avisos" class="tab-panel-avisos">
+              <div class="row row-cols-1 row-cols-md-3 g-4 card-noticias">
+                <div class="col">
+                  <div class="card card-tabs">
+                    <img src="../assets/img/noticias/parche.png" class="card-img-tabs">
+                    <div class="card-body-tabs">
+                      <h5 class="card-title-tabs h5-dark">Notas del Parche V1.10</h5>
+                      <p class="card-text-tabs">LLegan grandes añadidos y el asutraliano favoritos de todos. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-tabs">
+                    <img src="../assets/img/noticias/parche2.png" class="card-img-tabs">
+                    <div class="card-body-tabs">
+                      <h5 class="card-title-tabs h5-dark">Notas del Parche V1.09</h5>
+                      <p class="card-text-tabs">Correción de errores y mejoras en la dificultad.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-tabs">
+                    <img src="../assets/img/noticias/competir.png" class="card-img-tabs">
+                    <div class="card-body-tabs">
+                      <h5 class="card-title-tabs h5-dark">Compite y gana recompensas en el juego</h5>
+                      <p class="card-text-tabs">Algunas colaboraciones del mundo real y un nuevo tipo de evento.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </body>
 </html>

@@ -371,10 +371,13 @@ nav input {
 
 /* Banner llamativo colores */
 .banner {
-    display: flex;
-    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .banner img {
@@ -461,8 +464,8 @@ nav input {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-/* Sección Juegos Destacados */
-.h1-juegos-destacados, .h1-noticias{
+/* Headings */
+.h1-juegos-destacados, .h1-noticias, .h1-avisos{
     color: var(---black);
     font-size: 60px;
     font-weight: 700;
@@ -474,6 +477,7 @@ nav input {
     font-weight: bold;
 }
 
+/* Sección Juegos Destacados */
 .card-body-juegos-destacados {
     margin-left: 10%;
     margin-right: 10%;
@@ -573,7 +577,7 @@ nav input {
     margin-top: 4%;
 }
 
-/* Noticias */
+/* Noticias*/
 .tabset{
     margin-left: 10%;
     margin-right: 10%;
@@ -651,7 +655,54 @@ nav input {
     color: var(--color-not-to-black);
 }
 
+/* Avisos*/
+.tabset-avisos{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+.tabset-avisos>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset-avisos .tab-panel-avisos {
+    display: none;
+}
+
+.tabset-avisos>input:first-child:checked~.tab-panels-avisos>.tab-panel-avisos:first-child,
+.tabset-avisos>input:nth-child(3):checked~.tab-panel-avisos>.tab-panel-avisos:nth-child(2),
+.tabset-avisos>input:nth-child(5):checked~.tab-panels-avisos>.tab-panel-avisos:nth-child(3),
+.tabset-avisos>input:nth-child(7):checked~.tab-panels-avisos>.tab-panel-avisos:nth-child(4),
+.tabset-avisos>input:nth-child(9):checked~.tab-panels-avisos>.tab-panel-avisos:nth-child(5),
+.tabset-avisos>input:nth-child(11):checked~.tab-panels-avisos>.tab-panel-avisos:nth-child(6) {
+    display: block;
+}
+
+.tabset-avisos>label {
+    display: inline-block;
+    padding: 15px 15px 15px;
+    border-bottom: 0;
+    color: var(---black);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tabset-avisos>label:hover,
+.tabset-avisos>input:focus+label,
+.tabset-avisos>input:checked+label {
+    color: var(--color-cuaternario);
+}
+
+.tabset-avisos>input:checked+label {
+    border-color: #ccc;
+    margin-bottom: -1px;
+}
+
+.tab-panels-avisos {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
 
 /* Footer */
 
