@@ -381,8 +381,8 @@ nav input {
 }
 
 .banner img {
-    height: 550px;
-    width: 900px;
+    height: 500px;
+    width: 800px;
     bottom: 0;
 }
 
@@ -699,10 +699,6 @@ nav input {
     margin-bottom: -1px;
 }
 
-.tab-panels-avisos {
-    padding: 30px 0;
-    border-top: 1px solid #ccc;
-}
 
 /* Footer */
 
